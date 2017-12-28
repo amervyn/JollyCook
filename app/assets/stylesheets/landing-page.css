@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 body,
 html {
     width: 100%;
@@ -35,7 +36,10 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg) no-repeat center center;
+    background: /*url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg) no-repeat center center;*/
+    url(la_table_thanksgiving_table.png)
+    no-repeat center center;
+    no-repeat header left;
     background-size: cover;
 }
 
@@ -44,6 +48,7 @@ h6 {
     padding-top: 20%;
     padding-bottom: 20%;
 }
+
 
 .intro-message > h1 {
     margin: 0;
@@ -73,7 +78,7 @@ h6 {
     ul.intro-social-buttons > li {
         display: block;
         margin-bottom: 20px;
-        padding: 0;
+        padding: 0;        
     }
 
     ul.intro-social-buttons > li:last-child {
@@ -116,7 +121,9 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/banner-bg.jpg) no-repeat center center;
+    background: /*url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/banner-bg.jpg) no-repeat center center;*/
+    url(bg-showcase-1.jpg)
+    no-repeat center center;
     background-size: cover;
 }
 

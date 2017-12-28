@@ -25,6 +25,9 @@ group :development do
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
+gem 'bootstrap-social-rails'
+gem 'font-awesome-rails'
+gem 'foundation-rails'
 gem 'devise'
 gem 'gibbon'
 gem 'high_voltage'
