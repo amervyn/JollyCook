@@ -3,13 +3,13 @@
     <div class="container topnav">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand topnav" href="#">Appetister</a>
+            <a class="navbar-brand topnav" style="padding-top:0" href="/"><%= image_tag("appetister.png",size: "60x60", :alt => "Appetister") %></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -32,13 +32,14 @@
 
 <style type="text/css">
     .intro-header {
-      background: url(<%= randomized_background_image %>) no-repeat center center; 
+        background: url(<%= randomized_background_image %>) no-repeat center center;
+        background-size: cover;
     }
-  </style>
+</style>
 
 <!-- Header -->
 <a name="about"></a>
-<div class="intro-header">        
+<div class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -52,34 +53,44 @@
                                 Left div
                             </div> -->
                             <div class="featurette">
-                                    <div class="featurette-inner text-center">
-                                        <form role="form" class="search">
-                                            <h3 class="no-margin-top h1">What do you fancy today?</h3>
-                                            <div class="input-group input-group-lg">
-                                                <input type="search" placeholder="e.g. cuisine, town, postcode" class="form-control">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-danger" type="button">Search</button>
-                                                </span>
-                                            </div>
-                                            <!-- /input-group -->
-                                        </form>
-                                        <!-- /.max-width on this form -->
-            
-                                        <ul class="list-inline intro-social-buttons">
-                                                <li>
-                                                  <a href="https://www.twitter.com" class="btn btn-social btn-twitter"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.facebook.com" class="btn btn-social btn-facebook"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.instagram.com" class="btn btn-social btn-instagram"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                                                </li>
-                                            </ul>
+                                <div class="featurette-inner text-center">
+                                    <form role="form" class="search">
+                                        <h3 class="no-margin-top h1">What do you fancy today?</h3>
+                                        </br>
+                                        <div class="input-group input-group-lg">
+                                            <input type="search" placeholder="e.g. cuisine, town, postcode" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-danger" type="button">Search</button>
+                                            </span>
+                                        </div>
+                                        <!-- /input-group -->
+                                    </form>
+                                    <!-- /.max-width on this form -->
 
-                                    </div>
-                                    <!-- /.featurette-inner (display:table-cell) -->
+                                    <!-- <ul class="list-inline intro-social-buttons">
+                                        <li>
+                                            <a href="https://www.twitter.com" class="btn btn-social btn-twitter">
+                                                <i class="fa fa-twitter fa-fw"></i>
+                                                <span class="network-name">Twitter</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com" class="btn btn-social btn-facebook">
+                                                <i class="fa fa-facebook fa-fw"></i>
+                                                <span class="network-name">Facebook</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com" class="btn btn-social btn-instagram">
+                                                <i class="fa fa-instagram fa-fw"></i>
+                                                <span class="network-name">Instagram</span>
+                                            </a>
+                                        </li>
+                                    </ul> -->
+
                                 </div>
+                                <!-- /.featurette-inner (display:table-cell) -->
+                            </div>
 
                             <!-- <div class="col-lg-5 corps">
                                 Right div
