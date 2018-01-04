@@ -9,9 +9,15 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def create
-    params[:user][:email] = params[:stripeEmail]
-    params[:user][:stripeToken] = params[:stripeToken]
-    super
+    @user = User.new
+    @user.email=params[:user][:email]
+    @user.password=params[:user][:password]
+    @user.password_confirmation=params[:user][:password_confirmation]
+    
+    #params[:user][:email] = params[:stripeEmail]
+    #params[:user][:stripeToken] = params[:stripeToken]
+    #super
+    render :new
   end
 
 end

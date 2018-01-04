@@ -121,10 +121,15 @@ GEM
     minitest (5.10.3)
     multi_json (1.12.2)
     multipart-post (2.0.0)
+    mysql (2.9.1)
+    mysql2 (0.4.10)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
+    pg (0.21.0)
+    postgresql (1.0.0)
+      pg
     public_suffix (3.0.1)
     puma (3.11.0)
     rack (2.0.3)
@@ -221,6 +226,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
+  activesupport
   better_errors
   bootstrap-sass
   bootstrap-social-rails
@@ -235,6 +242,10 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  mysql
+  mysql2
+  pg
+  postgresql
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails_layout

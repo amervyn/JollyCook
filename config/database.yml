@@ -9,17 +9,29 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
+#default: &default
+#  adapter: postgresql
+#  encoding: utf8
+#  pool: 5
+#  username: postgres
+#  password: localiser
+#  host: 172.17.0.2
+#  database: appetister_development
+
 development:
   <<: *default
   database: db/development.sqlite3
-
+  #database: appetister_development
+  
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
   database: db/test.sqlite3
+  #database: appetister_test
 
 production:
   <<: *default
   database: db/production.sqlite3
+  #database: appetister_production
