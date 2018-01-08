@@ -5,6 +5,28 @@
   <div class="authform">
     <%= form_for(@user, :url => {:controller=>'registrations', :action => 'create'}, :html => { :role => 'form'}) do |f| %>
       <h3>Sign Up</h3>
+      <p>
+          <a class="btn btn-primary social-login-btn social-facebook" href="/auth/facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="btn btn-primary social-login-btn social-twitter" href="/auth/twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn btn-primary social-login-btn social-google" href="/auth/google">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a class="btn btn-primary social-login-btn social-linkedin" href="/auth/linkedin">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </p>  
+        
+        <div class="omb_login">
+        <div class="row omb_row-sm-offset-3 omb_loginOr">
+            <div class="col-xs-12 col-sm-6">          
+              <span class="omb_spanOr">or</span>
+            </div>
+          </div>
+        </div>
       <%= devise_error_messages! %>
       <div class="form-group">
         <%= f.label :name %>
