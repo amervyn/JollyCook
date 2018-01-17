@@ -6,6 +6,8 @@ end
 ruby '2.3.1'
 gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+#gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'mysql2'
 gem 'mysql'
 gem 'pg'

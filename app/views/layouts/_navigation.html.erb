@@ -1,4 +1,4 @@
-<!--<%# navigation styled for Bootstrap 3.0 %>
+<%# navigation styled for Bootstrap 3.0 %>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -18,7 +18,7 @@
     </div>
   </div>
 </nav>
--->
+
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -37,8 +37,8 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
+      <ul class="nav navbar-nav navbar-right nav-pills">
+        <!--<li>
           <a href="#about">About</a>
         </li>
         <li>
@@ -46,13 +46,16 @@
         </li>
         <li>
           <a href="#contact">Contact</a>
-        </li>
+        </li>-->
         <% if user_signed_in? %>
+	<li><%= link_to current_user.email, current_user%>
+ 	  </li>
           <li>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+            <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger navbar-btn"%>
           </li>
           <% else %>
-            <!-- <li><%= link_to "Sign Up", new_user_registration_path %></li> -->
+            <li><%= button_to "Sign Up", new_user_registration_path, class: "btn btn-primary navbar-btn" %></li>
+<li><a> </a></li>
             <li>
               <%= link_to "Login", new_user_session_path %>
             </li>
