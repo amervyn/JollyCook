@@ -48,16 +48,16 @@
           <a href="#contact">Contact</a>
         </li>-->
         <% if user_signed_in? %>
-	<li><%= link_to current_user.email, current_user%>
- 	  </li>
-          <li>
-            <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger navbar-btn"%>
-          </li>
+        <li>
+          <%= link_to current_user.email, current_user%>
+        </li>
+        <li>
+          <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger navbar-btn"%>
+        </li>
           <% else %>
-            <!--<li><%= button_to "Sign Up", new_user_registration_path, class: "btn btn-primary navbar-btn" %></li>
-<li><a> </a></li>-->
+            <!--<li><%= button_to "Sign Up", new_user_registration_path, class: "btn btn-primary navbar-btn" %></li>-->
             <li>
-              <%= button_to "Login", new_user_session_path, class: "btn btn-primary navbar-btn" %>
+              <%= button_to "Login", new_user_session_path, method: :get, class: "btn btn-primary navbar-btn" %>
             </li>
             <% end %>
       </ul>

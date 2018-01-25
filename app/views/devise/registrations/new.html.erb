@@ -1,7 +1,5 @@
-</br>
-</br>
 <% if @user.email.blank? || !resource.errors.empty? %>
-  <% flash.now[:alert] = 'Your card was NOT charged.' if !resource.errors.empty? %>
+  <!-- <% flash.now[:alert] = 'Your card was NOT charged.' if !resource.errors.empty? %> -->
   <div class="authform">
     <%= form_for(@user, :url => {:controller=>'registrations', :action => 'create'}, :html => { :role => 'form'}) do |f| %>
       <h3>Sign Up</h3>
