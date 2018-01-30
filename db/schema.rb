@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171222122637) do
+ActiveRecord::Schema.define(version: 20180125163558) do
+
+  create_table "reviews", force: :cascade do |t|
+    t.text "review_text"
+    t.integer "review_rating"
+    t.datetime "review_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

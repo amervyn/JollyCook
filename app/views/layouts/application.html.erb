@@ -16,20 +16,22 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <% if flash[:notice].present? %>
-  <div class="alert alert-info">
-    <span class="glyphicon glyphicon-info-sign"></span>
-    <%= flash[:notice] %>
-  </div>
-<% end %>
+    
+	<% if flash[:notice].present? %>
+	  <div class="alert alert-info">
+	    <span class="glyphicon glyphicon-info-sign"></span>
+	    <%= flash[:notice] %>
+	  </div>
+	<% end %>
 
-<% if flash[:alert].present? %>
-  <div class="alert alert-danger">
-    <span class="glyphicon glyphicon-exclamation-sign"></span>
-    <%= flash[:alert] %>
-  </div>
-<% end %>
-      <%= render 'layouts/messages' %>
+	<% if flash[:alert].present? %>
+	 <div class="alert alert-danger">
+	    <span class="glyphicon glyphicon-exclamation-sign"></span>
+	    <%= flash[:alert] %>
+	  </div>
+	<% end %>
+
+<%= render 'layouts/messages' %>
       <%= yield %>
   </body>
 </html>
