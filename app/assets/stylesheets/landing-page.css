@@ -68,10 +68,10 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: /*url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg) no-repeat center center;
-    url(la_table_thanksgiving_table.png)*/
+    /*background: *url(http://ironsummitmedia.github.io/startbootstrap-landing-page/img/intro-bg.jpg) no-repeat center center;
+    url(la_table_thanksgiving_table.png)
     no-repeat center center;
-    no-repeat header left;
+    no-repeat header left;*/
     background-size: cover;
 }
 
